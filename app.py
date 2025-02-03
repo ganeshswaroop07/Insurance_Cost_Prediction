@@ -9,7 +9,7 @@ with open('rf_best_poly_model_for_streamlit.pkl', 'rb') as file:
     poly = data['poly_transformer']
 
 # Streamlit app title
-st.title('Insurance Premium Prediction App')
+st.title('Insurance Cost Prediction')
 
 # Two-column layout for dropdown inputs
 col1, col2 = st.columns(2)
