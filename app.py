@@ -39,7 +39,14 @@ with col2:
     # Dropdown for Number of Major Surgeries
     major_surgeries = st.selectbox('Number of Major Surgeries', options=list(range(0, 4)), help="Select the number of major surgeries (0-3).")
 
-
+st.markdown("""
+    <style>
+    div.stButton > button:first-child {
+        background-color: #007BFF;
+        color: white;
+    }
+    </style>
+    """, unsafe_allow_html=True)
 
 # When user clicks the "Predict" button
 if st.button('Predict Premium'):
